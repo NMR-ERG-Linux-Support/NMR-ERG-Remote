@@ -67,7 +67,8 @@ Note that you can save your connection settings by entering the information abov
 
 
 ## Setting up tunnel for services, e.g. VNC Remote Desktop
-Please note this is an example for demonstration purposes, and any server/workstation names used may not be valid. Please ask us if you are unsure which machine you should setup a tunnel to.
+Please note this is an example for demonstration purposes, and any server/workstation names used may not be valid. Please ask us if you are unsure which machine you should setup a tunnel to. 
+For instance, there is no such workstation on the network called scherer.
 ### Linux and MacOS
 In order to use VNC over this connection, use the following command instead (again, replacing fields as needed. For example, replace NameOfTargetMachine with the name of a VNC host):
 
@@ -76,10 +77,11 @@ In order to use VNC over this connection, use the following command instead (aga
 Then, open your VNC viewer of choice and enter a host name of "localhost:5901". This will connect you to the desktop environment on whichever machine you enter as the target host.
 
 ### Windows
-tbd. On the left hand menu of Putty, goto "Connection"->"SSH"->"Tunnels". You can add a local Source port along with a Destination.   
-  
-For example, you could enter 5901 as the Source port, and workstation:5956 as the Destination. This means if you connect a VNC client to "localhost:5901", it will instead redirect your connection to be on the "workstation"  
+Please note the "Windows" section of this guide is incomplete. Please contact us if you have any questions.   
 
+On the left hand menu of Putty, goto "Connection"->"SSH"->"Tunnels". You can add a local Source port along with a Destination.   
+  
+As an example, if you were connecting to a machine called "scherer" which had a VNC port of "5977", you could enter 5901 as the Source port, and scherer:5956 as the Destination. This means if you connect a VNC client to "localhost:5901", it will instead redirect your connection to be on the "scherer:5977".   
 
 [These instructions are incomplete, please give any feedback you may have.]
 
