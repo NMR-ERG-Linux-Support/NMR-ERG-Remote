@@ -67,12 +67,13 @@ Note that you can save your connection settings by entering the information abov
 
 
 ## Setting up tunnel for services, e.g. VNC Remote Desktop
+Please note this is an example for demonstration purposes, and any server/workstation names used may not be valid. Please ask us if you are unsure which machine you should setup a tunnel to.
 ### Linux and MacOS
-In order to use VNC over this connection, use the following command instead (again, replacing fields as needed):
+In order to use VNC over this connection, use the following command instead (again, replacing fields as needed. For example, replace NameOfTargetMachine with the name of a VNC host):
 
-      ssh -p <ins>port</ins> -L 5901:workstation:5956 username@<ins>address</ins>
+      ssh -p <ins>port</ins> -L 5901:<ins>NameOfTargetMachine</ins>:5956 username@<ins>address</ins>
 
-Then, open your VNC viewer of choice and enter a host name of "localhost:5901". This will connect you to the desktop environment on workstation.
+Then, open your VNC viewer of choice and enter a host name of "localhost:5901". This will connect you to the desktop environment on whichever machine you enter as the target host.
 
 ### Windows
 tbd. On the left hand menu of Putty, goto "Connection"->"SSH"->"Tunnels". You can add a local Source port along with a Destination.   
