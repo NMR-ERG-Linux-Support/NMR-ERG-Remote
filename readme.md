@@ -82,7 +82,7 @@ For instance, there is no such workstation on the network called scherer.
 
 In order to use VNC over this connection, use the following command instead (again, replacing fields as needed. For example, replace NameOfTargetMachine with the name of a VNC host):
 
-      ssh -p <ins>port</ins> -L 5901:<ins>NameOfTargetMachine</ins>:5956 username@<ins>address</ins>
+      `ssh -p port -L 5901:NameOfTargetMachine:5956 username@address`
 
 Then, open your VNC viewer of choice and enter a host name of "localhost:5901". This will connect you to the desktop environment on whichever machine you enter as the target host.
 
